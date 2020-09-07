@@ -1,0 +1,12 @@
+{
+	"display_name": "History Filter",
+	"version": "0.1",
+	"project_url": "https://github.com/jonas-lundqvist/historyfilter-plugin",
+	"description": "Apply prefix based filter on the history",
+	"minimum_ec_version": "4.1",
+	"package_name": "historyfilter",
+	"available_for": [
+		"qt"
+	]
+}
+
