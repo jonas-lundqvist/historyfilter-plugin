@@ -8,10 +8,8 @@ from PyQt5.QtWidgets import *
 
 from electroncash.plugins import BasePlugin, hook
 from electroncash.i18n import _
-from electroncash_gui.qt.util import EnterButton, Buttons, CloseButton
+from electroncash_gui.qt.util import EnterButton, Buttons
 from electroncash_gui.qt.util import OkButton, WindowModalDialog
-from electroncash_gui.qt.main_window import ElectrumWindow
-from electroncash.util import Weak, PrintError
 
 DEFAULT_HISTORY_PREFIX = ';'
 
