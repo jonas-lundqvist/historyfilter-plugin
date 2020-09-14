@@ -39,8 +39,7 @@ class Plugin(BasePlugin):
         hbox = QHBoxLayout()
         hbox.addWidget(QLabel(_("Label prefix for hidden transactions")))
         textbox = QLineEdit()
-        textbox.setMaxLength(1)
-        textbox.setFixedWidth(20)
+        textbox.setMaxLength(32)
         textbox.setText(self.filter_prefix)
         hbox.addWidget(textbox)
         vbox = QVBoxLayout(d)
@@ -51,7 +50,7 @@ class Plugin(BasePlugin):
             return
         self.filter_prefix = str(textbox.text())
 
-        if len(self.filter_prefix) != 1:
+        if len(self.filter_prefix) < 1:
             self.filter_prefix = DEFAULT_HISTORY_PREFIX
         self.config.set_key('historyfilter_prefix', self.filter_prefix)
 
